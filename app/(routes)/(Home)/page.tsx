@@ -1,11 +1,15 @@
-import { ToggleTheme } from "@/components/ToggleTheme";
-import { Button } from "@/components/ui/button";
+// import { CallToAction } from "./components/CallToAction";
+import { Clients } from "./components/Clients";
+import { Hero } from "./components/Hero";
+import { Services } from "./components/Services";
 
 export default function Home() {
   return (
-    <div className="w-screen h-screen flex justify-center items-center gap-5">
-      <Button>Patito Media esta a full</Button>
-      <ToggleTheme />
+    <div>
+      <Hero />
+      <Clients />
+      <Services />
+      {/* <CallToAction /> */}
     </div>
   );
 }
