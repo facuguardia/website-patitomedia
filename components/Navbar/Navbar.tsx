@@ -13,6 +13,7 @@ import { Menu, MoveRight, X } from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
 import { ToggleTheme } from "../ToggleTheme";
+import { Logo } from "../Logo";
 
 export function Navbar() {
   const navigationItems = [
@@ -126,12 +127,12 @@ export function Navbar() {
           </NavigationMenu>
         </div>
         <div className="flex lg:justify-center">
-          <p className="font-semibold">Patito Media</p>
+          <p className="font-semibold"><Logo /></p>
         </div>
         <div className="flex justify-end w-full gap-4">
           <ToggleTheme />
           <div className="border-r hidden md:inline"></div>
-          <Link href="/login">
+          <Link href="https://decent-ape-86.accounts.dev/sign-in">
             <Button variant="outline">Area Clientes</Button>
           </Link>
         </div>

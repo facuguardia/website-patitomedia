@@ -1,5 +1,7 @@
 "use client";
 
+import { Logo } from "../Logo";
+
 export function Footer() {
   return (
     <footer className="body-font border-t border-gray-300 dark:border-gray-500 ">
@@ -115,9 +117,9 @@ export function Footer() {
         </div>
       </div>
       <div className="bg-black dark:bg-white ">
-        <div className="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
+        <div className="container px-5 py-2 mx-auto flex items-center sm:flex-row flex-col">
           <a className="flex title-font font-medium items-center md:justify-start justify-center text-white dark:text-black">
-            <span className="ml-3 text-xl">Patito Media</span>
+            <span className="ml-3"><Logo /></span>
           </a>
           <p className="text-sm text-gray-400 dark:text-gray-600 sm:ml-6 sm:mt-0 mt-4">
             © 2024 Facutech —
