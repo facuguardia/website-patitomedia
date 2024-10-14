@@ -5,7 +5,7 @@ import { Logo } from "../Logo";
 export function Footer() {
   return (
     <footer className="body-font border-t border-gray-300 dark:border-gray-500 ">
-      <div className="container px-5 py-24 mx-auto">
+      <div className="container px-5 py-20 mx-auto">
         <div className="flex flex-wrap md:text-left text-center order-first">
           <div className="lg:w-1/4 md:w-1/2 w-full px-4">
             <h2 className="title-font font-bold tracking-widest text-sm mb-3">
@@ -104,7 +104,7 @@ export function Footer() {
                   className="w-full bg-gray-800 rounded border bg-opacity-40 border-gray-700 focus:bg-transparent focus:ring-2 focus:ring-gray-400 focus:border-gray-500 text-base outline-none dark:text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
               </div>
-              <button className="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex bg-black dark:bg-white text-white dark:text-black  border-0 py-2 px-6 focus:outline-none hover:bg-gray-600 dark:hover:bg-gray-400 rounded">
+              <button className="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex bg-black dark:bg-[#F7E419] text-white dark:text-black font-semibold border-0 py-2 px-6 focus:outline-none hover:bg-gray-600 dark:hover:bg-[#F7E419]/70 rounded">
                 Enviar
               </button>
             </div>
@@ -116,13 +116,13 @@ export function Footer() {
           </div>
         </div>
       </div>
-      <div className="bg-black dark:bg-white ">
-        <div className="container px-5 py-2 mx-auto flex items-center sm:flex-row flex-col">
+      <div className="bg-black dark:bg-slate-200 ">
+        <div className="container mx-auto flex items-center sm:flex-row flex-col">
           <a className="flex title-font font-medium items-center md:justify-start justify-center text-white dark:text-black">
             <span className="ml-3"><Logo /></span>
           </a>
           <p className="text-sm text-gray-400 dark:text-gray-600 sm:ml-6 sm:mt-0 mt-4">
-            © 2024 Facutech —
+            © 2024 —
             <a
               href="https://www.facutech.com"
               className="text-gray-400 dark:text-gray-600 ml-1"
@@ -132,8 +132,8 @@ export function Footer() {
               www.facutech.com
             </a>
           </p>
-          <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start cursor-pointer">
-            <a className="text-gray-400 dark:text-gray-600">
+          <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <a className="text-gray-400 dark:text-gray-600 cursor-pointer">
               <svg
                 fill="currentColor"
                 stroke-linecap="round"
@@ -145,7 +145,7 @@ export function Footer() {
                 <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
               </svg>
             </a>
-            <a className="ml-3 text-gray-400 dark:text-gray-600">
+            <a className="ml-3 text-gray-400 dark:text-gray-600 cursor-pointer">
               <svg
                 fill="currentColor"
                 stroke-linecap="round"
@@ -157,7 +157,7 @@ export function Footer() {
                 <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
               </svg>
             </a>
-            <a className="ml-3 text-gray-400 dark:text-gray-600">
+            <a className="ml-3 text-gray-400 dark:text-gray-600 cursor-pointer">
               <svg
                 fill="none"
                 stroke="currentColor"
@@ -171,7 +171,7 @@ export function Footer() {
                 <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
               </svg>
             </a>
-            <a className="ml-3 text-gray-400 dark:text-gray-600">
+            <a className="ml-3 text-gray-400 dark:text-gray-600 cursor-pointer">
               <svg
                 fill="currentColor"
                 stroke="currentColor"

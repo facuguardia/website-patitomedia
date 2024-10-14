@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export function CallToAction() {
   return (
-    <div className="w-full py-20 lg:py-40 bg-muted">
+    <div className="w-full py-12 bg-muted">
       <div className="container mx-auto">
         <div className="flex flex-col text-center py-14 gap-4 items-center">
           <div className="flex flex-col gap-2">
@@ -21,7 +21,7 @@ export function CallToAction() {
             <Button className="gap-4" variant="outline">
               Hablemos de tu proyecto <PhoneCall className="w-4 h-4" />
             </Button>
-            <Button className="gap-4">
+            <Button className="gap-4 dark:bg-[#F7E419]">
               Impulsa tu negocio <MoveRight className="w-4 h-4" />
             </Button>
           </div>

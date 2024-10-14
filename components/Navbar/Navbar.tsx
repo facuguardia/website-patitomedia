@@ -100,7 +100,10 @@ export function Navbar() {
                               href="https://bit.ly/facutech-wsp"
                               target="_blank"
                             >
-                              <Button size="sm" className="mt-10">
+                              <Button
+                                size="sm"
+                                className="mt-10 font-semibold dark:bg-[#F7E419] dark:hover:bg-[#F7E419]/70"
+                              >
                                 Contactanos hoy mismo
                               </Button>
                             </Link>
@@ -127,7 +130,9 @@ export function Navbar() {
           </NavigationMenu>
         </div>
         <div className="flex lg:justify-center">
-          <p className="font-semibold"><Logo /></p>
+          <div className="font-semibold">
+            <Logo />
+          </div>
         </div>
         <div className="flex justify-end w-full gap-4">
           <ToggleTheme />

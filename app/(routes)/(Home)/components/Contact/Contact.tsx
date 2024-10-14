@@ -45,7 +45,7 @@ export function Contact() {
             <div className="flex flex-row gap-6 items-start text-left">
               <Check className="w-4 h-4 mt-2 text-primary" />
               <div className="flex flex-col gap-1">
-                <p>Rápido y efectivo</p>
+                <p className="">Rápido y efectivo</p>
                 <p className="text-muted-foreground text-sm">
                   Nos enfocamos en soluciones ágiles que entregan resultados sin
                   perder tiempo ni calidad. Tu proyecto, en marcha de inmediato.
@@ -55,7 +55,7 @@ export function Contact() {
             <div className="flex flex-row gap-6 items-start text-left">
               <Check className="w-4 h-4 mt-2 text-primary" />
               <div className="flex flex-col gap-1">
-                <p>Innovación constante</p>
+                <p className="">Innovación constante</p>
                 <p className="text-muted-foreground text-sm">
                   Nos mantenemos a la vanguardia de las tendencias digitales
                   para ofrecerte ideas frescas que mantendrán tu marca un paso
@@ -66,7 +66,7 @@ export function Contact() {
             <div className="flex flex-row gap-6 items-start text-left">
               <Check className="w-4 h-4 mt-2 text-primary" />
               <div className="flex flex-col gap-1">
-                <p>A tu medida</p>
+                <p className="">A tu medida</p>
                 <p className="text-muted-foreground text-sm">
                   Cada negocio es único. Adaptamos nuestras soluciones a tus
                   necesidades específicas, para que siempre obtengas lo mejor.
@@ -116,7 +116,6 @@ export function Contact() {
                 <Input id="lastname" type="text" />
               </div>
               <div className="grid w-full max-w-sm items-center gap-1">
-                <Label htmlFor="message">Mensaje</Label>
                 <Textarea
                   placeholder="Cuéntanos tu idea"
                   id="message"
@@ -124,7 +123,7 @@ export function Contact() {
                 />
               </div>
 
-              <Button className="gap-4 w-full">
+              <Button className="gap-4 w-full dark:bg-[#F7E419] font-semibold">
                 ¡Manos a la obra! <MoveRight className="w-4 h-4" />
               </Button>
             </div>

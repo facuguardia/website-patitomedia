@@ -26,7 +26,7 @@ export function Hero() {
     return () => clearTimeout(timeoutId);
   }, [titleNumber, titles]);
   return (
-    <div className="w-full">
+    <div className="w-full pt-10 pb-20">
       <div className="container mx-auto">
         <div className="flex gap-8 py-20 lg:py-40 items-center justify-center flex-col">
           <div>
@@ -46,7 +46,7 @@ export function Hero() {
                 {titles.map((title, index) => (
                   <motion.span
                     key={index}
-                    className="absolute font-semibold"
+                    className="absolute font-semibold dark:text-[#F7E419]"
                     initial={{ opacity: 0, y: "-100" }}
                     transition={{ type: "spring", stiffness: 50 }}
                     animate={
@@ -81,7 +81,7 @@ export function Hero() {
               </Button>
             </Link>
 
-            <Button size="lg" className="gap-4">
+            <Button size="lg" className="gap-4 dark:bg-[#F7E419] dark:hover:bg-[#F7E419]/70">
               Conoce nuestros servicios <MoveRight className="w-4 h-4" />
             </Button>
           </div>
