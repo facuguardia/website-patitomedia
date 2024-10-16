@@ -137,7 +137,7 @@ export function Navbar() {
         <div className="flex justify-end w-full gap-4">
           <ToggleTheme />
           <div className="border-r hidden md:inline"></div>
-          <Link href="https://decent-ape-86.accounts.dev/sign-in">
+          <Link href="/">
             <Button variant="outline">Area Clientes</Button>
           </Link>
         </div>

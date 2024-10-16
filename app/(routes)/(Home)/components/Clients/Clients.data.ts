@@ -1,8 +1,10 @@
-import LogoBocaBeach from "/public/images/logo-bocabeach.png";
-import LogoElParke from "/public/images/logo-elparke.png";
-import LogoSweetKocoa from "/public/images/logo-sweetkocoa.png";
-import LogoElQuebracho from "/public/images/logo-elquebracho.png";
+import LogoBocaBeach from "/public/images/logo-boca-beach.png";
+import LogoElParkeMotril from "/public/images/logo-el-parke-motril.png";
+import LogoSweetKocoa from "/public/images/logo-sweet-kocoa.png";
+import LogoElQuebracho from "/public/images/logo-el-quebracho.png";
 import LogoLinksCard from "/public/images/logo-linkscard.png";
+import LogoPadresProductivos from "/public/images/logo-padres-productivos.png"
+import LogoElTrasiego from "/public/images/logo-el-trasiego.png"
 
 // TODO: Add more clients
 
@@ -12,8 +14,8 @@ export const DataClients = [
     logo: LogoBocaBeach,
   },
   {
-    name: "El Parke",
-    logo: LogoElParke,
+    name: "El Parke Motril",
+    logo: LogoElParkeMotril,
   },
   {
     name: "Sweet Kocoa",
@@ -28,23 +30,13 @@ export const DataClients = [
     logo: LogoLinksCard,
   },
   {
-    name: "Boca Beach",
-    logo: LogoBocaBeach,
+    name: "Padres Productivos",
+    logo: LogoPadresProductivos,
   },
   {
-    name: "El Parke",
-    logo: LogoElParke,
+    name: "El Trasiego",
+    logo: LogoElTrasiego,
   },
-  {
-    name: "Sweet Kocoa",
-    logo: LogoSweetKocoa,
-  },
-  {
-    name: "El Quebracho",
-    logo: LogoElQuebracho,
-  },
-  {
-    name: "Links Card",
-    logo: LogoLinksCard,
-  },
+
+
 ];
