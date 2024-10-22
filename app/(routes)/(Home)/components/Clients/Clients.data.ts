@@ -37,6 +37,33 @@ export const DataClients = [
     name: "El Trasiego",
     logo: LogoElTrasiego,
   },
-
+  {
+    name: "Boca Beach",
+    logo: LogoBocaBeach,
+  },
+  {
+    name: "El Parke Motril",
+    logo: LogoElParkeMotril,
+  },
+  {
+    name: "Sweet Kocoa",
+    logo: LogoSweetKocoa,
+  },
+  {
+    name: "El Quebracho",
+    logo: LogoElQuebracho,
+  },
+  {
+    name: "Links Card",
+    logo: LogoLinksCard,
+  },
+  {
+    name: "Padres Productivos",
+    logo: LogoPadresProductivos,
+  },
+  {
+    name: "El Trasiego",
+    logo: LogoElTrasiego,
+  },
 
 ];

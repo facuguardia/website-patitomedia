@@ -10,71 +10,44 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { Menu, MoveRight, X } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { ToggleTheme } from "../ToggleTheme";
 import { Logo } from "../Logo";
+import { navigationItems } from "./Navbar.navigation";
 
 export function Navbar() {
-  const navigationItems = [
-    {
-      title: "Inicio",
-      href: "/",
-    },
-    {
-      title: "Servicios",
-      description: "Gestionar un negocio pequeño hoy ya es muy dificil.",
-      items: [
-        {
-          title: "Diseño web",
-          href: "/website",
-        },
-        {
-          title: "Producciones audiovisuales",
-          href: "/productions",
-        },
-        {
-          title: "Marketing digital",
-          href: "/marketing",
-        },
-        {
-          title: "Consultorias",
-          href: "/consulting",
-        },
-      ],
-    },
-    {
-      title: "Empresa",
-      description: "Gestionar un negocio pequeño hoy ya es muy dificil.",
-      items: [
-        {
-          title: "Sobre nosotros",
-          href: "/about",
-        },
-        {
-          title: "Nuestra fundación",
-          href: "/foundation",
-        },
-        {
-          title: "Inversores",
-          href: "/investors",
-        },
-        {
-          title: "Contacto",
-          href: "/contact",
-        },
-      ],
-    },
-  ];
+  const navigation = navigationItems;
 
   const [isOpen, setOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="w-full z-40 fixed top-0 left-0 bg-background">
+    <header
+      className={`w-full z-40 fixed top-0 left-0 bg-background transition-shadow duration-300 ${
+        isScrolled ? "shadow-md" : ""
+      }`}
+    >
       <div className="container relative mx-auto min-h-20 flex gap-4 flex-row lg:grid lg:grid-cols-3 items-center">
         <div className="justify-start items-center gap-4 lg:flex hidden flex-row">
           <NavigationMenu className="flex justify-start items-start">
             <NavigationMenuList className="flex justify-start gap-4 flex-row">
-              {navigationItems.map((item) => (
+              {navigation.map((item) => (
                 <NavigationMenuItem key={item.title}>
                   {item.href ? (
                     <>
@@ -137,7 +110,7 @@ export function Navbar() {
         <div className="flex justify-end w-full gap-4">
           <ToggleTheme />
           <div className="border-r hidden md:inline"></div>
-          <Link href="/">
+          <Link href="/login">
             <Button variant="outline">Area Clientes</Button>
           </Link>
         </div>
@@ -147,7 +120,7 @@ export function Navbar() {
           </Button>
           {isOpen && (
             <div className="absolute top-20 border-t flex flex-col w-full right-0 bg-background shadow-lg py-4 container gap-8">
-              {navigationItems.map((item) => (
+              {navigation.map((item) => (
                 <div key={item.title}>
                   <div className="flex flex-col gap-2">
                     {item.href ? (

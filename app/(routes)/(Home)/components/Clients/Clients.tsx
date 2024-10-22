@@ -10,6 +10,7 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import { DataClients } from "./Clients.data";
+import { Badge } from "@/components/ui/badge";
 
 export function Clients() {
   const [api, setApi] = useState<CarouselApi>();
@@ -30,15 +31,18 @@ export function Clients() {
         api.scrollNext();
         setCurrent(current + 1);
       }
-    }, 1000);
+    }, 3000);
   }, [api, current]);
 
   return (
     <div className="w-full py-12">
       <div className="container mx-auto">
+        <div className="mb-[16px]">
+          <Badge>¿A quien ayudamos?</Badge>
+        </div>
         <div className="flex flex-col  gap-10">
-          <h2 className="text-xl md:text-3xl tracking-tighter lg:max-w-xl font-regular text-left">
-          Marcas que Impulsamos
+          <h2 className="text-3xl md:text-5xl tracking-tighter max-w-xl font-regular text-left">
+            Marcas que impulsamos
           </h2>
           <Carousel setApi={setApi} className="w-full">
             <CarouselContent>

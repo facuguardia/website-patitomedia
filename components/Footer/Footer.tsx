@@ -116,7 +116,7 @@ export function Footer() {
           </div>
         </div>
       </div>
-      <div className="bg-black dark:bg-slate-200 ">
+      <div className="bg-black dark:bg-[#0D1524]">
         <div className="container mx-auto flex items-center sm:flex-row flex-col">
           <a className="flex title-font font-medium items-center md:justify-start justify-center text-white dark:text-black">
             <span className="ml-3"><Logo /></span>
