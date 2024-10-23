@@ -1,6 +1,7 @@
 import { MoveRight, PhoneCall } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+
 export function CallToAction() {
   return (
     <div className="w-full py-12 bg-muted">

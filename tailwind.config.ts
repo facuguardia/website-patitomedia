@@ -20,9 +20,7 @@ const config: Config = {
         "img-marketing":
           "url(https://img.freepik.com/foto-gratis/libro-blanco-blanco-sobre-icono-web-establecido-dibujado-pizarra_23-2147841252.jpg?t=st=1728897616~exp=1728901216~hmac=ef8e95c08e0f4e4865ef3ddcaa2724c3f3d04f4be7c18c26a38941aacbed96b1&w=740)",
         "img-consulting":
-          "url(https://img.freepik.com/foto-gratis/vista-superior-trabajador-dando-alta-cinco-colega_1163-4669.jpg?t=st=1728897949~exp=1728901549~hmac=0e14f7e2655d23baa290cb6327c81a1566b1d43957edb8fb8f345bb448ebe6c1&w=740)",
-          "img-about":
-          "url(https://img.freepik.com/fotos-premium/animal-pajaro-pollito-gafas-sol-pequeno-fondo-agricultura-aves-corral-pollo-joven-pequeno-amarillo_163305-211936.jpg?w=826)",
+          "url(https://img.freepik.com/foto-gratis/representacion-3d-fondo-textura-hexagonal_23-2150796418.jpg?t=st=1729693527~exp=1729697127~hmac=5901caca0c39aa1e248f09d3414d8548541f6d130777431cb018ffa3554285ab&w=740)",
       },
       colors: {
         background: "hsl(var(--background))",
