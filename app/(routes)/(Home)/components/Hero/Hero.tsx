@@ -46,7 +46,7 @@ export function Hero() {
                 {titles.map((title, index) => (
                   <motion.span
                     key={index}
-                    className="absolute font-semibold dark:text-[#F7E419] font-luckiest"
+                    className="absolute font-semibold text-[#F7E419] font-luckiest"
                     initial={{ opacity: 0, y: "-100" }}
                     transition={{ type: "spring", stiffness: 50 }}
                     animate={

@@ -16,7 +16,6 @@ export function Team() {
     <div className="w-full py-20">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 justify-end items-center gap-20">
-       
           <div className="w-full max-w-full px-9">
             <Carousel>
               <CarouselContent>
