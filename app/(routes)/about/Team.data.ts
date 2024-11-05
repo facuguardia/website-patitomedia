@@ -25,17 +25,4 @@ export const TeamData = [
     twitch: "",
     twitter: "",
   },
-  {
-    name: "Andrés Tolosa",
-    role: "Creative Audiovisual Specialist",
-    comment:
-      "Con un ojo experto para los detalles visuales, Andrés es quien da forma a las historias en formato audiovisual. Su creatividad transforma conceptos en contenido que impacta y conecta.",
-    image: "https://github.com/shadcn.png",
-    instagram: "https://www.instagram.com/untaltolosa/",
-    github: "",
-    linkedin: "",
-    facebook: "",
-    twitch: "",
-    twitter: "",
-  },
 ];
