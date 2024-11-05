@@ -1,6 +1,6 @@
 import { MoveRight, PhoneCall } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
+import Link from "next/link";
 
 export function CallToAction() {
   return (
@@ -19,11 +19,23 @@ export function CallToAction() {
             </p>
           </div>
           <div className="flex flex-row gap-4">
-            <Button className="gap-4" variant="outline">
-              Hablemos de tu proyecto <PhoneCall className="w-4 h-4" />
+            <Button className="gap-4 dark:hover:border-primary" variant="outline">
+              <Link
+                href="https://bit.ly/patitomedia"
+                target="_blank"
+                className="flex justify-center items-center gap-2"
+              >
+                Hablemos de tu proyecto <PhoneCall className="w-4 h-4" />
+              </Link>
             </Button>
-            <Button className="gap-4 dark:bg-[#F7E419]">
-              Impulsa tu negocio <MoveRight className="w-4 h-4" />
+            <Button className="gap-4 bg-primary hover:bg-[#F7E419]/40 font-semibold">
+              <Link
+                href="https://bit.ly/patitomedia"
+                target="_blank"
+                className="flex justify-center items-center gap-2"
+              >
+                Impulsa tu negocio <MoveRight className="w-4 h-4" />
+              </Link>
             </Button>
           </div>
         </div>

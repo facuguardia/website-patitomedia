@@ -43,7 +43,7 @@ export default function PageAbout() {
               </div>
               <div className="grid lg:pl-6 grid-cols-1 sm:grid-cols-3 items-start lg:grid-cols-1 gap-6">
                 <div className="flex flex-row gap-6 items-start">
-                  <Check className="w-4 h-4 mt-2 text-primary" />
+                  <Check className="w-4 h-4 mt-2 dark:text-primary" />
                   <div className="flex flex-col gap-1">
                     <p>Confianza</p>
                     <p className="text-muted-foreground text-sm">
@@ -54,7 +54,7 @@ export default function PageAbout() {
                   </div>
                 </div>
                 <div className="flex flex-row gap-6 items-start">
-                  <Check className="w-4 h-4 mt-2 text-primary" />
+                  <Check className="w-4 h-4 mt-2 dark:text-primary" />
                   <div className="flex flex-col gap-1">
                     <p>Eficiencia</p>
                     <p className="text-muted-foreground text-sm">
@@ -64,7 +64,7 @@ export default function PageAbout() {
                   </div>
                 </div>
                 <div className="flex flex-row gap-6 items-start">
-                  <Check className="w-4 h-4 mt-2 text-primary" />
+                  <Check className="w-4 h-4 mt-2 dark:text-primary" />
                   <div className="flex flex-col gap-1">
                     <p>Creatividad</p>
                     <p className="text-muted-foreground text-sm">

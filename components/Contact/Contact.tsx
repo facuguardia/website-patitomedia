@@ -43,7 +43,7 @@ export function Contact() {
               </div>
             </div>
             <div className="flex flex-row gap-6 items-start text-left">
-              <Check className="w-4 h-4 mt-2 text-primary" />
+              <Check className="w-4 h-4 mt-2 dark:text-primary" />
               <div className="flex flex-col gap-1">
                 <p className="">Rápido y efectivo</p>
                 <p className="text-muted-foreground text-sm">
@@ -53,7 +53,7 @@ export function Contact() {
               </div>
             </div>
             <div className="flex flex-row gap-6 items-start text-left">
-              <Check className="w-4 h-4 mt-2 text-primary" />
+              <Check className="w-4 h-4 mt-2 dark:text-primary" />
               <div className="flex flex-col gap-1">
                 <p className="">Innovación constante</p>
                 <p className="text-muted-foreground text-sm">
@@ -64,7 +64,7 @@ export function Contact() {
               </div>
             </div>
             <div className="flex flex-row gap-6 items-start text-left">
-              <Check className="w-4 h-4 mt-2 text-primary" />
+              <Check className="w-4 h-4 mt-2 dark:text-primary" />
               <div className="flex flex-col gap-1">
                 <p className="">A tu medida</p>
                 <p className="text-muted-foreground text-sm">
@@ -123,7 +123,7 @@ export function Contact() {
                 />
               </div>
 
-              <Button className="gap-4 w-full dark:bg-[#F7E419] font-semibold">
+              <Button className="gap-4 w-full bg-primary hover:bg-[#F7E419]/40 font-semibold">
                 ¡Manos a la obra! <MoveRight className="w-4 h-4" />
               </Button>
             </div>

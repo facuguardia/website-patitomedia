@@ -1,5 +1,6 @@
+import Link from "next/link";
 import { Check, MoveRight, PhoneCall } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
+
 import {
   Card,
   CardContent,
@@ -7,6 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
 export function Pricing() {
@@ -48,7 +50,7 @@ export function Pricing() {
                   </p>
                   <div className="flex flex-col gap-4 justify-start">
                     <div className="flex flex-row gap-4">
-                      <Check className="w-4 h-4 mt-2 text-primary" />
+                      <Check className="w-4 h-4 mt-2 dark:text-primary" />
                       <div className="flex flex-col">
                         <p>Sitio web de una página</p>
                         <p className="text-muted-foreground text-sm">
@@ -57,7 +59,7 @@ export function Pricing() {
                       </div>
                     </div>
                     <div className="flex flex-row gap-4">
-                      <Check className="w-4 h-4 mt-2 text-primary" />
+                      <Check className="w-4 h-4 mt-2 dark:text-primary" />
                       <div className="flex flex-col">
                         <p>Diseño de marca básico</p>
                         <p className="text-muted-foreground text-sm">
@@ -66,7 +68,7 @@ export function Pricing() {
                       </div>
                     </div>
                     <div className="flex flex-row gap-4">
-                      <Check className="w-4 h-4 mt-2 text-primary" />
+                      <Check className="w-4 h-4 mt-2 dark:text-primary" />
                       <div className="flex flex-col">
                         <p>Integración con redes sociales</p>
                         <p className="text-muted-foreground text-sm">
@@ -74,10 +76,16 @@ export function Pricing() {
                         </p>
                       </div>
                     </div>
+                    <Button variant="outline" className="gap-4">
+                      <Link
+                        href="https://bit.ly/patitomedia"
+                        target="_blank"
+                        className="flex justify-center items-center gap-2"
+                      >
+                        Empieza ahora <MoveRight className="w-4 h-4" />
+                      </Link>
+                    </Button>
                   </div>
-                  <Button variant="outline" className="gap-4">
-                    Empieza ahora <MoveRight className="w-4 h-4" />
-                  </Button>
                 </div>
               </CardContent>
             </Card>
@@ -99,12 +107,12 @@ export function Pricing() {
               <CardContent>
                 <div className="flex flex-col gap-8 justify-start">
                   <p className="flex flex-row  items-center gap-2 text-xl">
-                    <span className="text-4xl">1499</span>
+                    <span className="text-4xl">1199</span>
                     <span className="text-sm text-muted-foreground"> €</span>
                   </p>
                   <div className="flex flex-col gap-4 justify-start">
                     <div className="flex flex-row gap-4">
-                      <Check className="w-4 h-4 mt-2 text-primary" />
+                      <Check className="w-4 h-4 mt-2 dark:text-primary" />
                       <div className="flex flex-col">
                         <p>Website personalizado</p>
                         <p className="text-muted-foreground text-sm">
@@ -113,7 +121,7 @@ export function Pricing() {
                       </div>
                     </div>
                     <div className="flex flex-row gap-4">
-                      <Check className="w-4 h-4 mt-2 text-primary" />
+                      <Check className="w-4 h-4 mt-2 dark:text-primary" />
                       <div className="flex flex-col">
                         <p>LinksCard para networking digital</p>
                         <p className="text-muted-foreground text-sm">
@@ -122,7 +130,7 @@ export function Pricing() {
                       </div>
                     </div>
                     <div className="flex flex-row gap-4">
-                      <Check className="w-4 h-4 mt-2 text-primary" />
+                      <Check className="w-4 h-4 mt-2 dark:text-primary" />
                       <div className="flex flex-col">
                         <p>Estrategia de marketing digital</p>
                         <p className="text-muted-foreground text-sm">
@@ -131,8 +139,15 @@ export function Pricing() {
                       </div>
                     </div>
                   </div>
-                  <Button className="gap-4 dark:bg-[#F7E419] font-semibold">
-                    Transforma tu marca <PhoneCall className="w-4 h-4" />
+
+                  <Button className="gap-4 bg-primary hover:bg-[#F7E419]/40 font-semibold">
+                    <Link
+                      href="https://bit.ly/patitomedia"
+                      target="_blank"
+                      className="flex justify-center items-center gap-2"
+                    >
+                      Transforma tu marca <PhoneCall className="w-4 h-4" />
+                    </Link>
                   </Button>
                 </div>
               </CardContent>
@@ -154,12 +169,12 @@ export function Pricing() {
               <CardContent>
                 <div className="flex flex-col gap-8 justify-start">
                   <p className="flex flex-row  items-center gap-2 text-xl">
-                    <span className="text-4xl">999</span>
+                    <span className="text-4xl">799</span>
                     <span className="text-md text-muted-foreground"> €</span>
                   </p>
                   <div className="flex flex-col gap-4 justify-start">
                     <div className="flex flex-row gap-4">
-                      <Check className="w-4 h-4 mt-2 text-primary" />
+                      <Check className="w-4 h-4 mt-2 dark:text-primary" />
                       <div className="flex flex-col">
                         <p>Sitio web de múltiples páginas</p>
                         <p className="text-muted-foreground text-sm">
@@ -168,7 +183,7 @@ export function Pricing() {
                       </div>
                     </div>
                     <div className="flex flex-row gap-4">
-                      <Check className="w-4 h-4 mt-2 text-primary" />
+                      <Check className="w-4 h-4 mt-2 dark:text-primary" />
                       <div className="flex flex-col">
                         <p>Estrategia de marketing digital</p>
                         <p className="text-muted-foreground text-sm">
@@ -177,7 +192,7 @@ export function Pricing() {
                       </div>
                     </div>
                     <div className="flex flex-row gap-4">
-                      <Check className="w-4 h-4 mt-2 text-primary" />
+                      <Check className="w-4 h-4 mt-2 dark:text-primary" />
                       <div className="flex flex-col">
                         <p>Optimización SEO básica</p>
                         <p className="text-muted-foreground text-sm">
@@ -187,7 +202,13 @@ export function Pricing() {
                     </div>
                   </div>
                   <Button variant="outline" className="gap-4">
-                    Empieza ahora <MoveRight className="w-4 h-4" />
+                    <Link
+                      href="https://bit.ly/patitomedia"
+                      target="_blank"
+                      className="flex justify-center items-center gap-2"
+                    >
+                      Empieza ahora <MoveRight className="w-4 h-4" />
+                    </Link>
                   </Button>
                 </div>
               </CardContent>

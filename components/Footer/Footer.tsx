@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 import { Logo } from "../Logo";
 
 export function Footer() {
@@ -13,24 +13,24 @@ export function Footer() {
             </h2>
             <nav className="list-none mb-10">
               <li>
-                <a className="text-gray-500 dark:text-gray-400 dark:hover:text-gray-200 hover:text-gray-400">
+                <Link href="/website" className="text-gray-500 dark:text-gray-400 dark:hover:text-gray-200 hover:text-gray-400">
                   Diseño web
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="text-gray-500 dark:text-gray-400 dark:hover:text-gray-200 hover:text-gray-400">
+                <Link href="/productions" className="text-gray-500 dark:text-gray-400 dark:hover:text-gray-200 hover:text-gray-400">
                   Producciones audiovisuales
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="text-gray-500 dark:text-gray-400 dark:hover:text-gray-200 hover:text-gray-400">
+                <Link href="/marketing" className="text-gray-500 dark:text-gray-400 dark:hover:text-gray-200 hover:text-gray-400">
                   Marketing digital
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="text-gray-500 dark:text-gray-400 dark:hover:text-gray-200 hover:text-gray-400">
+                <Link href="/consulting" className="text-gray-500 dark:text-gray-400 dark:hover:text-gray-200 hover:text-gray-400">
                   Consultorías
-                </a>
+                </Link>
               </li>
             </nav>
           </div>
@@ -41,24 +41,24 @@ export function Footer() {
             </h2>
             <nav className="list-none mb-10">
               <li>
-                <a className="text-gray-500 dark:text-gray-400 dark:hover:text-gray-200 hover:text-gray-400">
+                <Link href="/about" className="text-gray-500 dark:text-gray-400 dark:hover:text-gray-200 hover:text-gray-400">
                   Sobre nosotros
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="text-gray-500 dark:text-gray-400 dark:hover:text-gray-200 hover:text-gray-400">
+                <Link href="foundation" className="text-gray-500 dark:text-gray-400 dark:hover:text-gray-200 hover:text-gray-400">
                   Nuestra fundación
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="text-gray-500 dark:text-gray-400 dark:hover:text-gray-200 hover:text-gray-400">
+                <Link href="investors" className="text-gray-500 dark:text-gray-400 dark:hover:text-gray-200 hover:text-gray-400">
                   Inversores
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="text-gray-500 dark:text-gray-400 dark:hover:text-gray-200 hover:text-gray-400">
+                <Link href="contact" className="text-gray-500 dark:text-gray-400 dark:hover:text-gray-200 hover:text-gray-400">
                   Contacto
-                </a>
+                </Link>
               </li>
             </nav>
           </div>
@@ -69,24 +69,24 @@ export function Footer() {
             </h2>
             <nav className="list-none mb-10">
               <li>
-                <a className="text-gray-500 dark:text-gray-400 dark:hover:text-gray-200 hover:text-gray-400">
+                <Link href="https://www.linkedin.com/company/patito-media/" target="_blank" className="text-gray-500 dark:text-gray-400 dark:hover:text-gray-200 hover:text-gray-400">
                   LinkdIn
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="text-gray-500 dark:text-gray-400 dark:hover:text-gray-200 hover:text-gray-400">
+                <Link href="https://www.instagram.com/patitomedia/" target="_blank" className="text-gray-500 dark:text-gray-400 dark:hover:text-gray-200 hover:text-gray-400">
                   Instagram
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="text-gray-500 dark:text-gray-400 dark:hover:text-gray-200 hover:text-gray-400">
+                <Link href="/" className="text-gray-500 dark:text-gray-400 dark:hover:text-gray-200 hover:text-gray-400">
                   Tik Tok
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="text-gray-500 dark:text-gray-400 dark:hover:text-gray-200 hover:text-gray-400">
+                <Link href="https://www.linkedin.com/company/patito-media/" target="_blank" className="text-gray-500 dark:text-gray-400 dark:hover:text-gray-200 hover:text-gray-400">
                   Facebook
-                </a>
+                </Link>
               </li>
             </nav>
           </div>
@@ -101,10 +101,10 @@ export function Footer() {
                   type="text"
                   id="footer-field"
                   name="footer-field"
-                  className="w-full bg-gray-800 rounded border bg-opacity-40 border-gray-700 focus:bg-transparent focus:ring-2 focus:ring-gray-400 focus:border-gray-500 text-base outline-none dark:text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  className="w-full bg-slate-200 dark:bg-secondary rounded border bg-opacity-40 border-gray-700 focus:bg-transparent focus:ring-2 focus:ring-gray-400 focus:border-gray-500 text-base outline-none dark:text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
               </div>
-              <button className="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex bg-black dark:bg-[#F7E419] text-white dark:text-black font-semibold border-0 py-2 px-6 focus:outline-none hover:bg-gray-600 dark:hover:bg-[#F7E419]/70 rounded">
+              <button className="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-black font-semibold border-2 border-black py-2 px-6 focus:outline-none bg-primary hover:bg-[#F7E419]/40 rounded shadow-md">
                 Enviar
               </button>
             </div>
@@ -116,24 +116,24 @@ export function Footer() {
           </div>
         </div>
       </div>
-      <div className="bg-black dark:bg-[#0D1524]">
+      <div className="bg-primary">
         <div className="container mx-auto flex items-center sm:flex-row flex-col">
-          <a className="flex title-font font-medium items-center md:justify-start justify-center text-white dark:text-black">
+          <Link href="/" className="flex items-center md:justify-start justify-center">
             <span className="ml-3"><Logo /></span>
-          </a>
-          <p className="text-sm text-gray-400 dark:text-gray-600 sm:ml-6 sm:mt-0 mt-4">
+          </Link>
+          <p className="text-sm text-gray-600 dark:text-gray-800 sm:ml-6 sm:mt-0 mt-4">
             © 2024 —
-            <a
+            <Link
               href="https://www.facutech.com"
-              className="text-gray-400 dark:text-gray-600 ml-1"
+              className="text-gray-600 dark:text-gray-800 ml-1 hover:underline transition-all duration-300 ease-in-out"
               target="_blank"
               rel="noopener noreferrer"
             >
               www.facutech.com
-            </a>
+            </Link>
           </p>
           <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-            <a className="text-gray-400 dark:text-gray-600 cursor-pointer">
+            <Link href="https://www.facebook.com/facuguar12" target="_blank" className="text-gray-600 dark:text-gray-800 cursor-pointer hover:scale-150 transition-all duration-300 ease-in-out">
               <svg
                 fill="currentColor"
                 stroke-linecap="round"
@@ -144,8 +144,8 @@ export function Footer() {
               >
                 <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
               </svg>
-            </a>
-            <a className="ml-3 text-gray-400 dark:text-gray-600 cursor-pointer">
+            </Link>
+            <Link href="https://x.com/FacuGuardia86" target="_blank" className="ml-3 text-gray-600 dark:text-gray-800 cursor-pointer hover:scale-150 transition-all duration-300 ease-in-out">
               <svg
                 fill="currentColor"
                 stroke-linecap="round"
@@ -156,8 +156,8 @@ export function Footer() {
               >
                 <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
               </svg>
-            </a>
-            <a className="ml-3 text-gray-400 dark:text-gray-600 cursor-pointer">
+            </Link>
+            <Link href="https://www.instagram.com/facuguar12/" target="_blank" className="ml-3 text-gray-600 dark:text-gray-800 cursor-pointer hover:scale-150 transition-all duration-300 ease-in-out">
               <svg
                 fill="none"
                 stroke="currentColor"
@@ -170,8 +170,8 @@ export function Footer() {
                 <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
                 <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
               </svg>
-            </a>
-            <a className="ml-3 text-gray-400 dark:text-gray-600 cursor-pointer">
+            </Link>
+            <Link href="https://www.linkedin.com/in/facu-guardia/" target="_blank" className="ml-3 text-gray-600 dark:text-gray-800 cursor-pointer hover:scale-150 transition-all duration-300 ease-in-out">
               <svg
                 fill="currentColor"
                 stroke="currentColor"
@@ -187,7 +187,7 @@ export function Footer() {
                 ></path>
                 <circle cx="4" cy="4" r="2" stroke="none"></circle>
               </svg>
-            </a>
+            </Link>
           </span>
         </div>
       </div>

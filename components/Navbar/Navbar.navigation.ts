@@ -5,7 +5,7 @@ export const navigationItems = [
   },
   {
     title: "Servicios",
-    description: "Gestionar un negocio pequeño hoy ya es muy dificil.",
+    description: "Conoce nuestros servicios y cómo puedes beneficiarte con nuestra experiencia.",
     items: [
       {
         title: "Diseño web",
@@ -27,7 +27,7 @@ export const navigationItems = [
   },
   {
     title: "Empresa",
-    description: "Gestionar un negocio pequeño hoy ya es muy dificil.",
+    description: "Conoce nuestra historia, nuestros valores y nuestro equipo.",
     items: [
       {
         title: "Sobre nosotros",

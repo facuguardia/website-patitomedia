@@ -1,6 +1,13 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+import { useEffect, useState } from "react";
+import Link from "next/link";
+import { Menu, MoveRight, X } from "lucide-react";
+
+import { Logo } from "../Logo";
+import { ToggleTheme } from "../ToggleTheme";
+import { navigationItems } from "./Navbar.navigation";
+
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -9,12 +16,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
-import { Menu, MoveRight, X } from "lucide-react";
-import { useEffect, useState } from "react";
-import Link from "next/link";
-import { ToggleTheme } from "../ToggleTheme";
-import { Logo } from "../Logo";
-import { navigationItems } from "./Navbar.navigation";
+import { Button } from "@/components/ui/button";
 
 export function Navbar() {
   const navigation = navigationItems;
@@ -52,7 +54,9 @@ export function Navbar() {
                   {item.href ? (
                     <>
                       <NavigationMenuLink>
-                        <Button variant="ghost">{item.title}</Button>
+                        <Link href="/">
+                          <Button variant="ghost">{item.title}</Button>
+                        </Link>
                       </NavigationMenuLink>
                     </>
                   ) : (
@@ -70,12 +74,12 @@ export function Navbar() {
                               </p>
                             </div>
                             <Link
-                              href="https://bit.ly/facutech-wsp"
+                              href="https://bit.ly/patitomedia"
                               target="_blank"
                             >
                               <Button
                                 size="sm"
-                                className="mt-10 font-semibold dark:bg-[#F7E419] dark:hover:bg-[#F7E419]/70"
+                                className="mt-10 font-semibold bg-primary hover:bg-[#F7E419]/40"
                               >
                                 Contactanos hoy mismo
                               </Button>

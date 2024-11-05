@@ -1,12 +1,13 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import Link from "next/link";
 
 import { motion } from "framer-motion";
 
 import { MoveRight, PhoneCall } from "lucide-react";
+
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
 
 export function Hero() {
   const [titleNumber, setTitleNumber] = useState(0);
@@ -46,7 +47,7 @@ export function Hero() {
                 {titles.map((title, index) => (
                   <motion.span
                     key={index}
-                    className="absolute font-semibold text-[#F7E419] font-luckiest"
+                    className="absolute font-bold text-[#FACC15] font-luckiest"
                     initial={{ opacity: 0, y: "-100" }}
                     transition={{ type: "spring", stiffness: 50 }}
                     animate={
@@ -75,15 +76,20 @@ export function Hero() {
             </p>
           </div>
           <div className="flex flex-row gap-3">
-            <Link href="https://bit.ly/facutech-wsp" target="_blank">
-              <Button size="lg" className="gap-4" variant="outline">
+            <Link href="https://bit.ly/patitomedia" target="_blank">
+              <Button
+                size="lg"
+                className="gap-4 font-semibold"
+                variant="outline"
+              >
                 Solicita una consultoría <PhoneCall className="w-4 h-4" />
               </Button>
             </Link>
-
-            <Button size="lg" className="gap-4 dark:bg-[#F7E419] dark:hover:bg-[#F7E419]/70">
-              Conoce nuestros servicios <MoveRight className="w-4 h-4" />
-            </Button>
+            <Link href="#services">
+              <Button size="lg" className="gap-4 font-semibold bg-primary hover:bg-[#F7E419]/40">
+                Conoce nuestros servicios <MoveRight className="w-4 h-4" />
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

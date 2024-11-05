@@ -34,38 +34,38 @@ export function CardTeam(props: CardTeamProps) {
         <div className="italic">
           <h4>{role}</h4>
         </div>
-        <div className="text-sm text-slate-400 break-words">
+        <div className="text-sm text-slate-600 dark:text-slate-400 break-words">
           <p>{comment}</p>
         </div>
         <div className="flex items-center justify-center gap-5">
           {instagram && (
             <Link href={instagram} target="_blank">
-              <Instagram className="w-5 h-5 hover:text-slate-400 transition-all duration-300 ease-in-out" />
+              <Instagram className="w-5 h-5 hover:text-slate-400 dark:hover:text-primary hover:scale-125  transition-all duration-300 ease-in-out" />
             </Link>
           )}
           {github && (
             <Link href={github} target="_blank">
-              <Github className="w-5 h-5 hover:text-slate-400 transition-all duration-300 ease-in-out" />
+              <Github className="w-5 h-5 hover:text-slate-400 dark:hover:text-primary hover:scale-125  transition-all duration-300 ease-in-out" />
             </Link>
           )}
           {linkedin && (
             <Link href={linkedin} target="_blank">
-              <Linkedin className="w-5 h-5 hover:text-slate-400 transition-all duration-300 ease-in-out" />
+              <Linkedin className="w-5 h-5 hover:text-slate-400 dark:hover:text-primary hover:scale-125  transition-all duration-300 ease-in-out" />
             </Link>
           )}
           {twitter && (
             <Link href={twitter} target="_blank">
-              <Twitter className="w-5 h-5 hover:text-slate-400 transition-all duration-300 ease-in-out" />
+              <Twitter className="w-5 h-5 hover:text-slate-400 dark:hover:text-primary hover:scale-125  transition-all duration-300 ease-in-out" />
             </Link>
           )}
           {facebook && (
             <Link href={facebook} target="_blank">
-              <Facebook className="w-5 h-5 hover:text-slate-400 transition-all duration-300 ease-in-out" />
+              <Facebook className="w-5 h-5 hover:text-slate-400 dark:hover:text-primary hover:scale-125  transition-all duration-300 ease-in-out" />
             </Link>
           )}
           {twitch && (
             <Link href={twitch} target="_blank">
-              <Twitch className="w-5 h-5 hover:text-slate-400 transition-all duration-300 ease-in-out" />
+              <Twitch className="w-5 h-5 hover:text-slate-400 dark:hover:text-primary hover:scale-125  transition-all duration-300 ease-in-out" />
             </Link>
           )}
         </div>
