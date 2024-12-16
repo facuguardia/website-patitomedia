@@ -105,6 +105,14 @@ export function Navbar() {
               ))}
             </NavigationMenuList>
           </NavigationMenu>
+          <div className="flex flex-row gap-4 text-sm">
+            <Link href="/about">
+              <Button variant="ghost">Nosotros</Button>
+            </Link>
+            <Link href="/contact">
+              <Button variant="ghost">Contacto</Button>
+            </Link>
+          </div>
         </div>
         <div className="flex lg:justify-center">
           <div className="font-semibold">

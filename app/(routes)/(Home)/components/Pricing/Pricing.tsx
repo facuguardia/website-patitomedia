@@ -29,7 +29,7 @@ export function Pricing() {
           </div>
           <div className="grid pt-20 text-left grid-cols-1 lg:grid-cols-3 w-full gap-8">
             {/* Card 1 */}
-            <Card className="w-full rounded-md">
+            <Card className="w-full rounded-md blur">
               <CardHeader>
                 <CardTitle>
                   <span className="flex flex-row gap-4 items-center font-normal">
@@ -107,7 +107,7 @@ export function Pricing() {
               <CardContent>
                 <div className="flex flex-col gap-8 justify-start">
                   <p className="flex flex-row  items-center gap-2 text-xl">
-                    <span className="text-4xl">1199</span>
+                    <span className="text-4xl">899</span>
                     <span className="text-sm text-muted-foreground"> €</span>
                   </p>
                   <div className="flex flex-col gap-4 justify-start">
@@ -154,7 +154,7 @@ export function Pricing() {
             </Card>
 
             {/* Card 3 */}
-            <Card className="w-full rounded-md">
+            <Card className="w-full rounded-md blur">
               <CardHeader>
                 <CardTitle>
                   <span className="flex flex-row gap-4 items-center font-normal">

@@ -25,26 +25,4 @@ export const navigationItems = [
       },
     ],
   },
-  {
-    title: "Empresa",
-    description: "Conoce nuestra historia, nuestros valores y nuestro equipo.",
-    items: [
-      {
-        title: "Sobre nosotros",
-        href: "/about",
-      },
-      {
-        title: "Nuestra fundación",
-        href: "/foundation",
-      },
-      {
-        title: "Inversores",
-        href: "/investors",
-      },
-      {
-        title: "Contacto",
-        href: "/contact",
-      },
-    ],
-  },
 ];

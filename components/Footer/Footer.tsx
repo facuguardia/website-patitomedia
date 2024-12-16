@@ -46,16 +46,6 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="foundation" className="text-gray-500 dark:text-gray-400 dark:hover:text-gray-200 hover:text-gray-400">
-                  Nuestra fundación
-                </Link>
-              </li>
-              <li>
-                <Link href="investors" className="text-gray-500 dark:text-gray-400 dark:hover:text-gray-200 hover:text-gray-400">
-                  Inversores
-                </Link>
-              </li>
-              <li>
                 <Link href="contact" className="text-gray-500 dark:text-gray-400 dark:hover:text-gray-200 hover:text-gray-400">
                   Contacto
                 </Link>
@@ -76,11 +66,6 @@ export function Footer() {
               <li>
                 <Link href="https://www.instagram.com/patitomedia/" target="_blank" className="text-gray-500 dark:text-gray-400 dark:hover:text-gray-200 hover:text-gray-400">
                   Instagram
-                </Link>
-              </li>
-              <li>
-                <Link href="/" className="text-gray-500 dark:text-gray-400 dark:hover:text-gray-200 hover:text-gray-400">
-                  Tik Tok
                 </Link>
               </li>
               <li>
@@ -124,12 +109,12 @@ export function Footer() {
           <p className="text-sm text-gray-600 dark:text-gray-800 sm:ml-6 sm:mt-0 mt-4">
             © 2024 —
             <Link
-              href="https://www.facutech.com"
+              href="https://www.facuguardia.tech"
               className="text-gray-600 dark:text-gray-800 ml-1 hover:underline transition-all duration-300 ease-in-out"
               target="_blank"
               rel="noopener noreferrer"
             >
-              www.facutech.com
+              www.facuguardia.tech
             </Link>
           </p>
           <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
