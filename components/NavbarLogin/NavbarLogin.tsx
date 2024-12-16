@@ -37,8 +37,8 @@ export function NavbarLogin() {
       isScrolled ? "shadow-md" : ""
     }`}
   >
-      <div className="container relative mx-auto min-h-20 flex gap-4 flex-row lg:grid lg:grid-cols-3 items-center">
-        <div className="justify-start items-center gap-4 lg:flex hidden flex-row">
+      <div className="container mx-auto min-h-20 flex items-center justify-between py-5">
+        {/* <div className="justify-start items-center gap-4 lg:flex hidden flex-row">
           <NavigationMenu className="flex justify-start items-start">
             <NavigationMenuList className="flex justify-start gap-4 flex-row">
               <Link
@@ -50,7 +50,7 @@ export function NavbarLogin() {
               </Link>
             </NavigationMenuList>
           </NavigationMenu>
-        </div>
+        </div> */}
         <div className="flex lg:justify-center">
           <div className="font-semibold">
             <Logo />
